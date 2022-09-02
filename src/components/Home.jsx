@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <div className="container m-5">
       <div className="row d-flex justify-content-center">
-        <div className="col-md-6 mt-5 py-5 d-flex justify-content-between">
-          <h1>Tara travel!</h1>
+        <div className="col-lg-10 mt-5 pt-5 pb-3 d-flex justify-content-between">
+          <h1>Add to your travel bucketlist!</h1>
           <div>
             <Link to="/add" className="btn btn-outline-primary btn-lg">
               Add Entry
@@ -42,7 +42,7 @@ export default function Home() {
                   <td>{id + 1}</td>
                   <td>{entry.place}</td>
                   <td>{entry.date}</td>
-                  <td>{entry.budget}</td>
+                  <td>{`Php ${entry.budget}`}</td>
                   <td>{entry.desc}</td>
                   <td>
                     <Link

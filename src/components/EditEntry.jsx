@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import AddEntry from "./AddEntry";
 
 export default function EditEntry() {
   const [place, setPlace] = useState("");
