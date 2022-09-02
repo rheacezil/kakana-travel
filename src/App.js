@@ -1,21 +1,25 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import TravelDiary from './components/TravelDiary'
+import Home from './components/Home'
 import { Route, Routes } from 'react-router-dom'
+import AddEntry from './components/AddEntry';
+import EditEntry from './components/EditEntry';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <Navbar />
-      {/* <TravelDiary /> */}
+      {/* <Home /> */}
       <Routes>
-        <Route exact path="/" element={<TravelDiary />}>
+        <Route exact path="/" element={<Home />}>
         </Route>
 
-        <Route path="/add">
+        <Route path="/add" element={<AddEntry />}>
         </Route>
 
-        <Route path="/edit/:id">
+        <Route path="/edit/:id" element={<EditEntry />}>
         </Route>
       </Routes>
     </div>
